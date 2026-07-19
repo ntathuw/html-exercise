@@ -11,3 +11,17 @@ body {
   gap: 16px;
   padding: 0;
 }
+
+#site-footer {
+  text-align: center;
+  padding: 12px 0;
+  border-top: 1px solid #ddd;
+}
+
+.nav-list > li {
+  display: inline-block;
+}
+
+#site-header a {
+  text-decoration: none;
+}
