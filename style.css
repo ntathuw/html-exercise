@@ -35,6 +35,18 @@ body {
   line-height: 1.6;
 }
 
+#intro-lesson p {
+  margin-bottom: 16px;
+}
+
+.btn-next {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #0077cc;
+  border-radius: 4px;
+  margin-top: 12px;
+}
+
 #topics-sidebar h2 ~ ul {
   border-left: 3px solid #0077cc;
   padding-left: 12px;
