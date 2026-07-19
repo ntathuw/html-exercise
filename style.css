@@ -25,3 +25,17 @@ body {
 #site-header a {
   text-decoration: none;
 }
+
+#intro-lesson h2 + p {
+  color: #444;
+  line-height: 1.6;
+}
+
+#topics-sidebar h2 ~ ul {
+  border-left: 3px solid #0077cc;
+  padding-left: 12px;
+}
+
+a[href^="#"] {
+  color: #0077cc;
+}
