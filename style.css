@@ -39,3 +39,16 @@ body {
 a[href^="#"] {
   color: #0077cc;
 }
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #004c99;
+}
+
+.topic-item:first-child {
+  font-weight: bold;
+}
+
+.topic-item:nth-child(even) {
+  background-color: #f0f6ff;
+}
