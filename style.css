@@ -41,12 +41,9 @@ body {
   text-decoration: none;
 }
 
-#intro-lesson h2 + p {
+#intro-lesson p {
   color: #444;
   line-height: 1.6;
-}
-
-#intro-lesson p {
   margin-bottom: 16px;
 }
 
