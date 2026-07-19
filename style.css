@@ -1,5 +1,9 @@
 /* Main stylesheet for the HTML learning page */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   color: #222;
