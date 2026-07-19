@@ -1,5 +1,10 @@
 /* Main stylesheet for the HTML learning page */
 
+:root {
+  --color-primary: #0077cc;
+  --color-primary-dark: #004c99;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -17,7 +22,7 @@ body {
 
 .keyword {
   font-weight: bold;
-  color: #0077cc;
+  color: var(--color-primary);
 }
 
 .nav-list {
@@ -50,13 +55,13 @@ body {
 .btn-next {
   display: inline-block;
   padding: 10px 20px;
-  border: 2px solid #0077cc;
+  border: 2px solid var(--color-primary);
   border-radius: 4px;
   margin-top: 12px;
 }
 
 #topics-sidebar h2 ~ ul {
-  border-left: 3px solid #0077cc;
+  border-left: 3px solid var(--color-primary);
   padding-left: 12px;
 }
 
@@ -82,7 +87,7 @@ body {
 }
 
 a[href^="#"] {
-  color: #0077cc;
+  color: var(--color-primary);
 }
 
 .nav-link {
@@ -92,7 +97,7 @@ a[href^="#"] {
 
 .nav-link:hover {
   text-decoration: underline;
-  color: #004c99;
+  color: var(--color-primary-dark);
 }
 
 .topic-item:first-child {
