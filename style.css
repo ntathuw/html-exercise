@@ -1,0 +1,54 @@
+/* Main stylesheet for the HTML learning page */
+
+body {
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  padding: 0;
+}
+
+#site-footer {
+  text-align: center;
+  padding: 12px 0;
+  border-top: 1px solid #ddd;
+}
+
+.nav-list > li {
+  display: inline-block;
+}
+
+#site-header a {
+  text-decoration: none;
+}
+
+#intro-lesson h2 + p {
+  color: #444;
+  line-height: 1.6;
+}
+
+#topics-sidebar h2 ~ ul {
+  border-left: 3px solid #0077cc;
+  padding-left: 12px;
+}
+
+a[href^="#"] {
+  color: #0077cc;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #004c99;
+}
+
+.topic-item:first-child {
+  font-weight: bold;
+}
+
+.topic-item:nth-child(even) {
+  background-color: #f0f6ff;
+}

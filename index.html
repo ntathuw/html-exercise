@@ -4,42 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Learn HTML</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Web Learning Hub</h1>
+  <header id="site-header">
+    <h1><a href="#">Web Learning Hub</a></h1>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#">HTML</a></li>
-      <li><a href="#">CSS</a></li>
-      <li><a href="#">JavaScript</a></li>
-      <li><a href="#">Exercises</a></li>
+  <nav id="main-nav">
+    <ul class="nav-list">
+      <li><a href="#" class="nav-link">HTML</a></li>
+      <li><a href="#" class="nav-link">CSS</a></li>
+      <li><a href="#" class="nav-link">JavaScript</a></li>
+      <li><a href="#" class="nav-link">Exercises</a></li>
     </ul>
   </nav>
 
-  <main>
+  <main id="main-content">
     <div>
-      <aside>
+      <aside id="topics-sidebar">
         <h2>HTML Topics</h2>
-        <ul>
-          <li>HTML Basics</li>
-          <li>HTML Elements</li>
-          <li>HTML Forms</li>
-          <li>HTML Tables</li>
+        <ul class="topic-list">
+          <li class="topic-item">HTML Basics</li>
+          <li class="topic-item">HTML Elements</li>
+          <li class="topic-item">HTML Forms</li>
+          <li class="topic-item">HTML Tables</li>
         </ul>
       </aside>
 
-      <article>
+      <article id="intro-lesson">
         <h2>Introduction to HTML</h2>
         <p>HTML is the standard markup language used to build the structure of a web page. It describes how content such as text, images, and links are organized so browsers can display them correctly.</p>
-        <a href="#">Next Lesson &rarr;</a>
+        <a href="#" class="btn-next">Next Lesson &rarr;</a>
       </article>
     </div>
   </main>
 
-  <footer>
+  <footer id="site-footer">
     <p>&copy; 2026 Web Learning Hub. All rights reserved.</p>
   </footer>
 
