@@ -7,109 +7,196 @@
 body {
   font-family: Arial, sans-serif;
   color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-#site-header {
+.page-content {
+  flex: 1;
+}
+
+/* ===== Block: site-header ===== */
+.site-header {
   min-height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 24px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
 }
 
-.search-input {
+.site-header__title a {
+  color: #04aa6d;
+  font-weight: bold;
+}
+
+.site-header a {
+  text-decoration: none;
+  color: #04aa6d;
+}
+
+.site-header__search-input {
   padding: 8px 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   width: 220px;
 }
 
-.keyword {
-  font-weight: bold;
-  color: #0077cc;
+.site-header__search-input:focus {
+  outline: none;
+  border-color: #04aa6d;
 }
 
-.nav-list {
+/* ===== Shared: nav-link (dùng chung cho site-header__nav-list và main-nav__list) ===== */
+.nav-link {
+  padding: 8px 12px;
+  display: inline-block;
+  color: #04aa6d;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #ffffff;
+  background-color: #04aa6d;
+  border-radius: 4px;
+}
+
+/* ===== site-header__nav-list (menu phụ trong header) ===== */
+.site-header__nav-list {
   list-style: none;
   display: flex;
+  justify-content: space-evenly;
   gap: 16px;
   padding: 0;
 }
 
-#site-footer {
+.site-header__nav-list .nav-link {
+  color: #222;
+}
+
+.site-header__nav-list .nav-link:hover {
+  color: #ffffff;
+  background-color: #04aa6d;
+}
+
+.site-header__nav-list > li {
+  display: inline-block;
+}
+
+/* ===== Block: main-nav (thanh menu chính, kiểu topnav W3Schools) ===== */
+.main-nav {
+  background-color: #282a35;
+}
+
+.main-nav__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 16px;
+  padding: 0;
+}
+
+.main-nav__list > li {
+  display: inline-block;
+}
+
+.main-nav__list .nav-link {
+  color: #ffffff;
+}
+
+.main-nav__list .nav-link:hover {
+  color: #ffffff;
+  background-color: #04aa6d;
+}
+
+/* ===== Block: site-footer ===== */
+.site-footer {
   text-align: center;
   padding: 12px 0;
   border-top: 1px solid #ddd;
+  background-color: #282a35;
+  color: #ffffff;
 }
 
-.nav-list > li {
-  display: inline-block;
-}
-
-#site-header a {
-  text-decoration: none;
-}
-
-#intro-lesson h2 + p {
-  color: #444;
-  line-height: 1.6;
-}
-
-#intro-lesson p {
-  margin-bottom: 16px;
-}
-
-.btn-next {
-  display: inline-block;
-  padding: 10px 20px;
-  border: 2px solid #0077cc;
-  border-radius: 4px;
-  margin-top: 12px;
-}
-
-#topics-sidebar h2 ~ ul {
-  border-left: 3px solid #0077cc;
-  padding-left: 12px;
-}
-
-#main-content > div {
+/* ===== content-layout (flexbox 2 cột: sidebar + lessons) ===== */
+.content-layout {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
 }
 
-#topics-sidebar {
-  width: 220px;
+/* ===== Block: sidebar ===== */
+.sidebar {
+  flex: 1;
   padding: 16px;
-}
-
-#intro-lesson {
-  width: 100%;
-  padding: 16px;
-}
-
-#intro-lesson,
-#topics-sidebar {
   overflow-wrap: break-word;
 }
 
-a[href^="#"] {
-  color: #0077cc;
+.sidebar__title {
+  color: #282a35;
 }
 
-.nav-link {
-  padding: 8px 12px;
-  display: inline-block;
+.sidebar__list {
+  border-left: 3px solid #04aa6d;
+  padding-left: 12px;
 }
 
-.nav-link:hover {
-  text-decoration: underline;
-  color: #004c99;
-}
-
-.topic-item:first-child {
+.sidebar__item:first-child {
   font-weight: bold;
+  color: #04aa6d;
 }
 
-.topic-item:nth-child(even) {
-  background-color: #f0f6ff;
+.sidebar__item:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+/* ===== Block: lessons (khu vực chứa nhiều .lesson) ===== */
+.lessons {
+  flex: 3;
+  padding: 16px;
+}
+
+/* ===== Block: lesson ===== */
+.keyword {
+  font-weight: bold;
+  color: #04aa6d;
+}
+
+.lesson__code {
+  background-color: #282a35;
+  color: #ffffff;
+  padding: 12px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.lesson__next-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #04aa6d;
+  border-radius: 4px;
+  margin-top: 12px;
+  color: #ffffff;
+  background-color: #04aa6d;
+}
+
+.lesson__next-btn:hover {
+  background-color: #03945f;
+  border-color: #03945f;
+}
+
+/* Modifier: lesson--intro (chỉ áp dụng riêng cho bài giới thiệu) */
+.lesson--intro {
+  overflow-wrap: break-word;
+}
+
+.lesson--intro .lesson__title + .lesson__text {
+  color: #444;
+  line-height: 1.6;
+}
+
+.lesson--intro .lesson__text {
+  margin-bottom: 16px;
 }

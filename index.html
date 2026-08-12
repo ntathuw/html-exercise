@@ -7,57 +7,68 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header id="site-header">
-    <h1><a href="#">Web Learning Hub</a></h1>
+  <header class="site-header">
+    <h1 class="site-header__title"><a href="#">Web Learning Hub</a></h1>
+    <nav class="site-header__nav">
+      <ul class="site-header__nav-list">
+        <li><a href="#" class="nav-link">Tutorial</a></li>
+        <li><a href="#" class="nav-link">References</a></li>
+        <li><a href="#" class="nav-link">Certificates</a></li>
+      </ul>
+    </nav>
 
-    <form class="search-form" action="#" role="search">
-      <input type="search" class="search-input" placeholder="Search HTML tags...">
+    <form class="site-header__search" action="#" role="search">
+      <input type="search" class="site-header__search-input" placeholder="Search HTML tags...">
     </form>
   </header>
 
-  <nav id="main-nav">
-    <ul class="nav-list">
+  <nav class="main-nav">
+    <ul class="main-nav__list">
       <li><a href="#" class="nav-link">HTML</a></li>
       <li><a href="#" class="nav-link">CSS</a></li>
       <li><a href="#" class="nav-link">JavaScript</a></li>
       <li><a href="#" class="nav-link">Exercises</a></li>
+      <li><a href="#" class="nav-link">SQL</a></li>
+      <li><a href="#" class="nav-link">C#</a></li>
+      <li><a href="#" class="nav-link">REACT</a></li>
+      <li><a href="#" class="nav-link">PYTHON</a></li>
     </ul>
   </nav>
 
-  <main id="main-content">
-    <div>
-      <aside id="topics-sidebar">
-        <h2>HTML Topics</h2>
-        <ul class="topic-list">
-          <li class="topic-item">HTML Basics</li>
-          <li class="topic-item">HTML Elements</li>
-          <li class="topic-item">HTML Forms</li>
-          <li class="topic-item">HTML Tables</li>
-          <li class="topic-item">HTML Attributes</li>
-          <li class="topic-item">HTML Links</li>
-          <li class="topic-item">HTML Images</li>
-          <li class="topic-item">HTML Lists</li>
+  <main class="page-content">
+    <div class="content-layout">
+      <aside class="sidebar">
+        <h2 class="sidebar__title">HTML Topics</h2>
+        <ul class="sidebar__list">
+          <li class="sidebar__item">HTML Basics</li>
+          <li class="sidebar__item">HTML Elements</li>
+          <li class="sidebar__item">HTML Forms</li>
+          <li class="sidebar__item">HTML Tables</li>
+          <li class="sidebar__item">HTML Attributes</li>
+          <li class="sidebar__item">HTML Links</li>
+          <li class="sidebar__item">HTML Images</li>
+          <li class="sidebar__item">HTML Lists</li>
         </ul>
       </aside>
 
-      <section id="lessons">
-        <article id="intro-lesson">
-          <h2>Introduction to HTML</h2>
-          <p><span class="keyword">HTML</span> is the standard markup language used to build the structure of a web page. It describes how content such as text, images, and links are organized so browsers can display them correctly.</p>
-          <a href="#" class="btn-next">Next Lesson &rarr;</a>
+      <section class="lessons">
+        <article class="lesson lesson--intro">
+          <h2 class="lesson__title">Introduction to HTML</h2>
+          <p class="lesson__text"><span class="keyword">HTML</span> is the standard markup language used to build the structure of a web page. It describes how content such as text, images, and links are organized so browsers can display them correctly.</p>
+          <a href="#" class="lesson__next-btn">Next Lesson &rarr;</a>
         </article>
 
-        <article id="example-lesson">
-          <h2>Example</h2>
-          <p>Below is a simple example of an HTML element:</p>
-          <pre><code>&lt;p&gt;Hello, World!&lt;/p&gt;</code></pre>
+        <article class="lesson lesson--example">
+          <h2 class="lesson__title">Example</h2>
+          <p class="lesson__text">Below is a simple example of an HTML element:</p>
+          <pre class="lesson__code"><code>&lt;p&gt;Hello, World!&lt;/p&gt;</code></pre>
         </article>
       </section>
     </div>
   </main>
 
-  <footer id="site-footer">
-    <p>&copy; 2026 Web Learning Hub. All rights reserved.</p>
+  <footer class="site-footer">
+    <p class="site-footer__text">&copy; 2026 Web Learning Hub. All rights reserved.</p>
   </footer>
 
 </body>
