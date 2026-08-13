@@ -49,6 +49,30 @@ body {
   border-color: #04aa6d;
 }
 
+/* ===== Block: icon-cart (icon + badge số lượng) ===== */
+.icon-cart {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  padding: 4px;
+}
+
+.icon-cart__badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 9px;
+  background-color: #e63946;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+  text-align: center;
+}
+
 /* ===== Shared: nav-link (dùng chung cho site-header__nav-list và main-nav__list) ===== */
 .nav-link {
   padding: 8px 12px;
@@ -199,4 +223,100 @@ body {
 
 .lesson--intro .lesson__text {
   margin-bottom: 16px;
+}
+
+.lesson--long .lesson__text {
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* ===== Block: demo-position (khu vực minh họa cho bài Position) ===== */
+.demo-position {
+  padding: 16px 24px 60px;
+}
+
+.demo-position__title {
+  color: #282a35;
+  margin-bottom: 16px;
+}
+
+/* ----- promo-card: nhãn đè lên ảnh bằng z-index ----- */
+.promo-card {
+  position: relative;
+  width: 260px;
+  margin-bottom: 32px;
+}
+
+.promo-card__image {
+  width: 100%;
+  height: 160px;
+  background-color: #cfd8dc;
+  color: #546e7a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.promo-card__label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+  background-color: #e63946;
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* ----- center-demo: căn giữa bằng position + margin auto ----- */
+.center-demo {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 140px;
+  border: 2px dashed #04aa6d;
+  border-radius: 6px;
+}
+
+.center-demo__inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 220px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #04aa6d;
+  color: #ffffff;
+  border-radius: 4px;
+  text-align: center;
+  padding: 0 8px;
+}
+
+/* ===== Block: back-to-top (nút ghim cố định) ===== */
+.back-to-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 10;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background-color: #282a35;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.back-to-top:hover {
+  background-color: #04aa6d;
 }

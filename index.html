@@ -20,6 +20,11 @@
     <form class="site-header__search" action="#" role="search">
       <input type="search" class="site-header__search-input" placeholder="Search HTML tags...">
     </form>
+
+    <div class="icon-cart" aria-label="Giỏ hàng">
+      <span class="icon-cart__icon">🛒</span>
+      <span class="icon-cart__badge">3</span>
+    </div>
   </header>
 
   <nav class="main-nav">
@@ -63,13 +68,40 @@
           <p class="lesson__text">Below is a simple example of an HTML element:</p>
           <pre class="lesson__code"><code>&lt;p&gt;Hello, World!&lt;/p&gt;</code></pre>
         </article>
+
+        <article class="lesson lesson--long">
+          <h2 class="lesson__title">HTML Elements Reference</h2>
+          <p class="lesson__text">An HTML element is defined by a start tag, some content, and an end tag. <span class="keyword">Elements</span> can be nested inside other elements, forming the tree structure of a document.</p>
+          <p class="lesson__text">Common elements include headings (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>), paragraphs (<code>&lt;p&gt;</code>), links (<code>&lt;a&gt;</code>), images (<code>&lt;img&gt;</code>), and lists (<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>).</p>
+          <p class="lesson__text">Attributes provide additional information about elements and are always specified in the start tag, usually as name/value pairs like <code>name="value"</code>.</p>
+          <p class="lesson__text">Every HTML page should include a <code>&lt;!DOCTYPE html&gt;</code> declaration, a <code>&lt;head&gt;</code> section for metadata, and a <code>&lt;body&gt;</code> section for visible content.</p>
+          <p class="lesson__text">Semantic elements such as <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code> help describe the meaning of the content, improving accessibility and SEO.</p>
+          <p class="lesson__text">Forms let users submit data using elements like <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, <code>&lt;select&gt;</code>, and <code>&lt;button&gt;</code>, combined with a <code>&lt;form&gt;</code> wrapper.</p>
+          <p class="lesson__text">Tables organize tabular data using <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, and <code>&lt;td&gt;</code> elements.</p>
+          <p class="lesson__text">Good HTML structure makes CSS styling and JavaScript behavior easier to reason about, since selectors and DOM traversal follow the same tree.</p>
+        </article>
       </section>
     </div>
+
+    <section class="demo-position">
+      <h2 class="demo-position__title">Position Demo</h2>
+
+      <div class="promo-card">
+        <div class="promo-card__image">Ảnh minh họa</div>
+        <span class="promo-card__label">Giảm 50%</span>
+      </div>
+
+      <div class="center-demo">
+        <div class="center-demo__inner">Căn giữa bằng position + margin: auto</div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <p class="site-footer__text">&copy; 2026 Web Learning Hub. All rights reserved.</p>
   </footer>
+
+  <button class="back-to-top" aria-label="Lên đầu trang">↑</button>
 
 </body>
 </html>
